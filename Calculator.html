@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html dir="rtl" lang="fa">
+	<head>
+		<link rel="stylesheet" href="styles3.css">
+		<meta charset="UTF-8">
+		<title>ماشین حساب</title>
+	</head>
+	<body>
+		<meta charset="UTF-8">
+		<div class="grid-container">
+			<div id="header-menu" class="item1">
+				<div class="flex-container">
+					<div>
+						<a id="list-Item1" href="index.html" class="button">مشخصات شخصی</a>
+  					</div>
+  					<div>
+  						<a id="list-Item2" href="AcademicCV.html" class="button">مشخصات تحصیلی</a>
+  					</div>
+  					<div>
+  						<a id="list-Item3" href="ArtisticCV.html" class="button">مشخصات هنری</a>
+  					</div>
+  					<div>
+  						<a id="list-Items" href="Calculator.html" class="button">ماشین حساب</a>
+  					</div>
+				</div>
+			</div>
+			<div class="Calculator">
+				<header id="screen"></header>
+				<table>			
+      				<tbody>
+						<tr class="orange">
+							<td id="a1">AC</td>
+          					<td id="a2">%</td>
+          					<td id="a3">/</td>
+		  				</tr>
+						<tr class="orange">
+							<td id="a4">+</td>
+							<td id="a5">-</td>
+							<td id="a6">x</td>
+						</tr>
+						<tr class="yellow">
+					    	<td id="a7">7</td>
+					    	<td id="a8">8</td>
+					    	<td id="a9">9</td>
+						</tr>
+						<tr class="yellow">
+							<td id="a10">4</td>
+							<td id="a11">5</td>
+							<td id="a12">6</td>
+						</tr>
+						<tr class="white">
+      						<td id="a13">1</td>
+	  						<td id="a14">2</td>
+							<td id="a15">3</td>
+						</tr>
+						<tr class="white">
+      						<td id="a16">.</td>
+	  						<td id="a17">0</td>
+							<td id="a18">=</td>
+						</tr>	
+					</tbody>
+				</table>
+			</div>
+			<div class="Form">
+				<h2>فرم نام و نام خانوادگی</h2>
+				<form>
+					<label for="fname">نام: </label><br>
+					<input type="text" id="fname" name="fname" value="اردوان"><br>
+					<label for="lname">نام خانوادگی: </label><br>
+					<input type="text" id="lname" name="lname" value="خلیج"><br><br>
+				</form> 
+				<a id="sabt">ثبت</a>
+			</div>
+			<script>
+				
+				document.getElementById("sabt").addEventListener("click", function() {
+					var FNLName = document.getElementById("fname").value;
+					FNLName = FNLName + ' ' + document.getElementById("lname").value;
+					var result = FNLName + "\nعزیز، به وبسایت شخصی من خوش آمدید!";
+					console.log(result);
+					alert(result);
+				});
+				
+				var a = '';
+				var b = '';
+				var num = [];
+				var ans;
+				document.getElementById("a1").addEventListener("click", function() {
+					document.getElementById('screen').innerHTML = '';
+					while(num.length > 0){
+						num.pop();
+					}
+					a ='';	
+					b ='';
+				});
+				document.getElementById("a2").addEventListener("click", function() {
+					num.push('*0.01');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a3").addEventListener("click", function(){
+					num.push('/');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a4").addEventListener("click", function(){
+					num.push('+');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});				
+				document.getElementById("a5").addEventListener("click", function(){
+					num.push('-');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});	
+				document.getElementById("a6").addEventListener("click", function(){
+					num.push('*');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});	
+				document.getElementById("a7").addEventListener("click", function(){
+					num.push('7');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});	
+				document.getElementById("a8").addEventListener("click", function(){
+					num.push('8');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});	
+				document.getElementById("a9").addEventListener("click", function(){
+					num.push('9');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});	
+				document.getElementById("a10").addEventListener("click", function(){
+					num.push('4');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a11").addEventListener("click", function(){
+					num.push('5');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a12").addEventListener("click", function(){
+					num.push('6');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a13").addEventListener("click", function(){
+					num.push('1');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a14").addEventListener("click", function(){
+					num.push('2');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a15").addEventListener("click", function(){
+					num.push('1');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a16").addEventListener("click", function(){
+					num.push('.');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a17").addEventListener("click", function(){
+					num.push('0');
+					if(num.length != 1){
+						a = '';
+						document.getElementById('screen').innerHTML = a;
+					}
+					for(i=0; i<num.length ; i++){
+						a = a + num[i];
+					}
+					document.getElementById('screen').innerHTML = a;
+				});
+				document.getElementById("a18").addEventListener("click", function(){
+					document.getElementById('screen').innerHTML = '';
+					for(i=0; i<num.length ; i++){
+						b += num[i];
+					}
+					ans = eval(b);	
+					document.getElementById('screen').innerHTML = ans;
+					while(num.length > 0){
+						num.pop();
+					}
+					num.push(ans.toString());
+				});
+				var lm_color = 1;
+				function changeColor() {
+                	var x = document.getElementById("list-Items");
+					if (lm_color == 1){
+                 	   x.style.color = "black";
+				 	   lm_color = 0;
+				 	}
+				 	else{
+                    	x.style.color = "white";
+						lm_color = 1;
+                	}
+            	}       
+				window.setInterval(changeColor,500);
+			
+				document.getElementById("list-Item1").addEventListener("mouseover",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            	});
+				document.getElementById("list-Item1").addEventListener("mouseout",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            	});
+            
+				document.getElementById("list-Item2").addEventListener("mouseover",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            	});
+				document.getElementById("list-Item2").addEventListener("mouseout",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            	});
+            
+				document.getElementById("list-Item3").addEventListener("mouseover",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            	});
+				document.getElementById("list-Item3").addEventListener("mouseout",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            	});
+            
+				document.getElementById("list-Items").addEventListener("mouseover",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            	});
+				document.getElementById("list-Items").addEventListener("mouseout",function() {
+                	var elements = document.getElementsByClassName("item1");
+					elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            	});
+          </script>
+	</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html dir="rtl" lang="fa">
+	<head>
+		<link rel="stylesheet" href="styles2.css">
+		<meta charset="UTF-8">
+		<title>مشخصات هنری</title>
+	</head>
+	<body>
+		<meta charset="UTF-8">
+		<div class="grid-container">
+			<div id="header-menu" class="item1">
+				<div class="flex-container">
+					<div>
+						<a id="list-Item1" href="index.html" class="button">مشخصات شخصی</a>
+  					</div>
+  					<div>
+  						<a id="list-Item2" href="AcademicCV.html" class="button">مشخصات تحصیلی</a>
+  					</div>
+  					<div>
+  						<a id="list-Items" href="ArtisticCV.html" class="button">مشخصات هنری</a>
+  					</div>
+  					<div>
+  						<a id="list-Item3" href="Calculator.html" class="button">ماشین حساب</a>
+  					</div>
+				</div>
+			</div>
+			<div id="picture" class="item4">
+				<h4>ساز های موسیقیایی</h4>
+			</div>
+			<div id="sum" class="item5">
+				<ol>
+					<li><h4>پیانو</h4></li>
+					<li><h4>تار</h4></li>
+					<li><h4>تنبک</h4></li>
+				</ol>
+			</div>
+			<div id="comminu" class="item6">
+				<h4>خوانندگی</h4>
+			</div>
+			<div id="twitter" class="item7">
+				<ol>
+					<li><h4>آواز سنتی ایرانی</h4></li>
+					<li><h4>ترانه های پاپ</h4></li>
+					<li><h4>ترانه های انگلیسی زبان</h4></li>
+				</ol>
+			</div>
+			<div id="personal" class="item8">
+				<h4>اجراهای زنده</h4>
+			</div>
+			<div id="email" class="item9">
+				<ol>
+					<li><p>مراسم فارغ التحصیلی دانشجویان مهندسی مکانیک دانشگاه کاشان، تالار همایش آزادی دانشگاه کاشان</p></li>
+					<li><p>مراسم فارغ التحصیلی دانشجویان مهندسی شیمی دانشگاه کاشان، تالار همایش فیض دانشگاه کاشان</p></li>
+					<li><p>همایش ازدواج دانشجویی دانشگاه کاشان، تالار همایش آزادی دانشگاه کاشان</p></li>
+					<li><p>دورهمی کانون موسیقی و تأتر دانشگاه کاشان، تالار همایش علوم انسانی دانشگاه کاشان</p></li>
+					<li><p>همایش انجمن اسلامی دانشگاه کاشان، تالار همایش فیض دانشگاه کاشان</h4></li>
+					<li><p>مراسم دانشکده روانشناسی دانشگاه کاشان، تالار همایش علوم انسانی دانشگاه کاشان</p></li>
+					<li><p>دورهمی کانون موسیقی و تأتر دانشگاه کاشان، تالار همایش آزادی دانشگاه کاشان</p></li>
+				</ol>
+			</div>
+		</div>
+		<div class="footer">
+			<h4>© Made with ❤️ by Ardavan Khalij</h4>
+		</div>
+		<script>
+			var lm_color = 1;
+            function changeColor() {
+                var x = document.getElementById("list-Items");
+                if (lm_color == 1){
+                    x.style.color = "black";
+                    lm_color = 0;
+                }
+                else{
+                    x.style.color = "white";
+                    lm_color = 1;
+                }
+            }       
+            window.setInterval(changeColor,500);
+			
+            document.getElementById("list-Item1").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item1").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item2").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item2").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Items").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Items").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item3").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item3").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+          </script>
+	</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html dir="rtl" lang="fa">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8">
+		<title>مشخصات شخصی</title>
+	</head>
+	<body>
+		<meta charset="UTF-8">
+		<div class="grid-container">
+			<div id="header-menu" class="item1">
+				<div class="flex-container">
+					<div>
+						<a id="list-Items" href="index.html" class="button">مشخصات شخصی</a>
+  					</div>
+  					<div>
+  						<a id="list-Item1" href="AcademicCV.html" class="button">مشخصات تحصیلی</a>
+  					</div>
+  					<div>
+  						<a id="list-Item2" href="ArtisticCV.html" class="button">مشخصات هنری</a>
+  					</div>
+  					<div>
+  						<a id="list-Item3" href="Calculator.html" class="button">ماشین حساب</a>
+  					</div>
+				</div>
+			</div>
+			<div id="picture" class="item2">
+				<img id="img1" src="Ardavan.JPG" width="100px" class="responsive"/>
+			</div>
+			<div id="personal" class="item3">
+				<ul>
+		  			<li><h4>نام: اردوان</h4></li>
+		  			<li><h4>نام خانوادگی: خلیج</h4></li>
+		  			<li><h4>محل تحصیل: دانشگاه کاشان</h4></li>
+		  			<li><h4>مقطع تحصیلی: کارشناسی</h4></li>
+		  			<li><h4>رشته تحصیلی: مهندسی کامپیوتر</h4></li>
+		  			<li><h4>شماره دانشجویی: ۹۶۲۱۱۶۰۰۱۳</h4></li>
+		  			<li><h4>معدل: ۱۷.۰۸</h4></li>
+  				</ul>
+			</div>  
+			<div id="sum" class="item4">
+				<h4>خلاصه ای از من</h4>
+			</div>
+			<div id="sump" class="item5">
+				<p>من دانشجوی کارشناسی در رشته مهندسی کامپیوتر دانشگاه کاشان هستم. تصمیم بر ادامه تحصیل در مقاطع بالاتر و در راستای هوش مصنوعی و یادگیری ماشین را دارم. در حال حاضر در ترم آخر مقطع کارشناسی هستم و امیدوارم بتوانم با وضعیت خوبی این مقطع را پشت سر بگذارم. در این ترم ۱۳ واحد درس دارم که شامل پروژه پایانی من است که درباره ی مقایسه عملکرد روش های مخلف دسته بندی و استفاده از منطق فازی برای بالا بردن دقت دسته بندی و استخراج تحلیل قابل فهم است.</p>
+			</div>
+			<div id="comminu" class="item6">
+				<h4>راه های ارتباط با من</h4>
+				<img id="img2" src="SocialMedia.JPG" width="100px" class="responsive"/>
+			</div>
+			<div class="item7">
+			پست الکترونیک من: <a id="email" href="mailto:ardavan.akhalij@gmail.com">ardavan.akhalij@gmail.com</a>
+			</div>
+			<div class="item8">
+کانال Telegram: <a id="telegram" href="http://t.me/ardavan_music">ardavan_music</a>
+			</div>
+			<div class="item9">
+				  شناسه Instagram: <a id="instagram" href="https://www.instagram.com/ardavan.a_khalij/">Ardavan.A_Khalij</a>
+			</div>
+			<div class="item10">
+				شناسه Twitter: <a id="twitter" href="https://twitter.com/ardavan_khalij">Ardavan_Khalij</a>
+			</div>
+			<div class="item11">
+				 کانال youtube: <a id="youtube" href="https://www.youtube.com/channel/UCYP81Ay41cZFnR0-Qx4-9Hw">Ardavan_Khalij</a>
+			</div>
+			<div class="item12">
+				 شناسه Facebook: <a id="facebook" href=""https://www.facebook.com/ardavan.khalij"">Arddy_kh</a>
+			</div>
+			<div class="item13">
+				 شناسه GitHub: <a id="github" href="https://github.com/ArdavanKhalij">Ardavan_Khalij</a>
+			</div>
+		</div>
+		<div class="footer">
+			<h4>© Made with ❤️ by Ardavan Khalij</h4>
+		</div>
+		    <script>
+			var lm_color = 1;
+            function changeColor() {
+                var x = document.getElementById("list-Items");
+                if (lm_color == 1){
+                    x.style.color = "black";
+                    lm_color = 0;
+                }
+                else{
+                    x.style.color = "white";
+                    lm_color = 1;
+                }
+            }       
+            window.setInterval(changeColor,500);
+            
+            document.getElementById("list-Items").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Items").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item1").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item1").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item2").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item2").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item3").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item3").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("email").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item7");
+                elements[0].style.backgroundColor = "blue";
+            });
+            document.getElementById("email").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item7");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("email").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item7");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("email").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item7");
+                elements[0].style.color = "black";
+            });
+            
+            document.getElementById("instagram").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item9");
+                elements[0].style.backgroundColor = "#e4405f";
+            });
+            document.getElementById("instagram").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item9");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("instagram").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item9");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("instagram").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item9");
+                elements[0].style.color = "black";
+            });
+            
+            document.getElementById("telegram").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item8");
+                elements[0].style.backgroundColor = "#0088cc";
+            });
+            document.getElementById("telegram").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item8");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("telegram").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item8");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("telegram").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item8");
+                elements[0].style.color = "black";
+            });
+            
+            document.getElementById("twitter").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item10");
+                elements[0].style.backgroundColor = "#55acee";
+            });
+            document.getElementById("twitter").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item10");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("twitter").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item10");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("twitter").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item10");
+                elements[0].style.color = "black";
+            });
+            
+            document.getElementById("youtube").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item11");
+                elements[0].style.backgroundColor = "red";
+            });
+            document.getElementById("youtube").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item11");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("youtube").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item11");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("youtube").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item11");
+                elements[0].style.color = "black";
+            });
+            
+            document.getElementById("facebook").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item12");
+                elements[0].style.backgroundColor = "#4267B2";
+            });
+            document.getElementById("facebook").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item12");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("facebook").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item12");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("facebook").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item12");
+                elements[0].style.color = "black";
+            });
+            
+            document.getElementById("github").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item13");
+                elements[0].style.backgroundColor = "black";
+            });
+            document.getElementById("github").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item13");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            document.getElementById("github").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item13");
+                elements[0].style.color = "white";
+            });
+            document.getElementById("github").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item13");
+                elements[0].style.color = "black";
+            });
+          </script>
+	</body>
+</html>

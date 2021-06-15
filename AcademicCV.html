@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html dir="rtl" lang="fa">
+	<head>
+		<link rel="stylesheet" href="styles1.css">
+		<meta charset="UTF-8">
+		<title>مشخصات تحصیلی</title>
+	</head>
+	<body>
+		<meta charset="UTF-8">
+		<div class="grid-container">
+			<div id="header-menu" class="item1">
+				<div class="flex-container">
+					<div>
+						<a id="list-Item1" href="index.html" class="button">مشخصات شخصی</a>
+  					</div>
+  					<div>
+  						<a id="list-Items" href="AcademicCV.html" class="button">مشخصات تحصیلی</a>
+  					</div>
+  					<div>
+  						<a id="list-Item2" href="ArtisticCV.html" class="button">مشخصات هنری</a>
+  					</div>
+  					<div>
+  						<a id="list-Item3" href="Calculator.html" class="button">ماشین حساب</a>
+  					</div>
+				</div>
+			</div>
+			<div id="picture" class="item4">
+				<h4>علاقه مندی های تحقیقاتی</h4>
+			</div>
+			<div id="comminu" class="item5">
+				<ol>
+					<li><h4>هوش مصنوعی</h4></li>
+					<li><h4>یادگیری ماشین</h4></li>
+					<li><h4>داده کاوی</h4></li>
+					<li><h4>بیوانفورماتیک</h4></li>
+				</ol>
+			</div>
+			<div id="personal" class="item6">
+				<h4>سابقه حل تمرین</h4>
+			</div>
+			<div id="sum" class="item7">
+				<h4>عنوان: حل تمرین اخترفیزیک</h4>
+				<h5>مکان: دبیرستان سلام دیباجی</h5>
+				<h5>زمان: سال تحصیلی ۹۴-۹۵</h5>
+			</div>
+			<div id="sump" class="item8">
+				<h4>عنوان: حل تمرین طراحی الگوریتم</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۸-۹۹</h5>
+				<h5>استاد درس: دکتر سلیمی سرتختی</h5>
+			</div>
+			<div id="email" class="item9">
+				<h4>عنوان: حل تمرین مبانی کامپیوتر</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۸-۹۹</h5>
+				<h5>استاد درس: دکتر دهقانی</h5>
+			</div>
+			<div id="instagram" class="item10">
+				<h4>عنوان: حل تمرین مبانی کامپیوتر</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۹-۰۰</h5>
+				<h5>استاد درس: دکتر دهقانی</h5>
+			</div>
+			<div id="telegram" class="item11">
+				<h4>عنوان: کارگاه کامپیوتر</h4>
+				<h5>مکان: دانشگاه کاشان</h5>
+				<h5>زمان: نیمه اوّل سال تحصیلی ۹۹-۰۰</h5>
+				<h5>استاد درس: دکتر دهقانی</h5>
+			</div>
+			<div id="twitter" class="item12">
+				<h4>آزمون های بین المللی</h4>
+			</div>
+			<div id="youtube" class="item13">
+				<h3>IELTS Academic: 6.5</h3>
+				<h5>Listening: 7.5</h5>
+				<h5>Reading: 6.5</h5>
+				<h5>Writing: 6.0</h5>
+				<h5>Speaking: 6.0</h5>
+			</div>
+			<div id="facebook" class="item14">
+				<h3>GRE General: 298</h3>
+				<h5>Quantitive: 162</h5>
+				<h5>Verbal: 137</h5>
+				<h5>Writing: 2.5</h5>
+			</div>
+		</div>
+		<div class="footer">
+			<h4>© Made with ❤️ by Ardavan Khalij</h4>
+		</div>
+		<script>
+			var lm_color = 1;
+            function changeColor() {
+                var x = document.getElementById("list-Items");
+                if (lm_color == 1){
+                    x.style.color = "black";
+                    lm_color = 0;
+                }
+                else{
+                    x.style.color = "white";
+                    lm_color = 1;
+                }
+            }       
+            window.setInterval(changeColor,500);
+			
+            document.getElementById("list-Item1").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item1").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Items").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Items").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item2").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item2").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+            
+            document.getElementById("list-Item3").addEventListener("mouseover",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(200, 200, 200, 1)";
+            });
+            document.getElementById("list-Item3").addEventListener("mouseout",function() {
+                var elements = document.getElementsByClassName("item1");
+                elements[0].style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+            });
+          </script>
+	</body>
+</html>
